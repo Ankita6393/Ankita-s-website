@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 300px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .gender-label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Sign in</h1>
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Enter your Last name" required>
+        <label for="username">User Name</label>
+        <input type="text" name="username" id="uusername" placeholder="Enter User name" required>
+        <label for="DOB">DOB</label>
+        <input type="date" name="DOB" id="DOB" placeholder="Enter your DOB" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter email id" required>
+        <label for="gender">Gender</label>
+        <span class="gender-label"><input type="radio" id="gender-male" name="gender" value="male" required><label for="gender-male">Male</label></span>
+        <span class="gender-label"><input type="radio" id="gender-female" name="gender" value="female"><label for="gender-female">Female</label></span>
+        <span class="gender-label"><input type="radio" id="gender-other" name="gender" value="other"><label for="gender-other">Other</label></span>
+        <br><br>
+        <label for="password">Password </label>
+        <input type="password" name="password" id="password" placeholder="Create a password" required minlength="8">
+        <button type="submit">Sign in</button>
+    </form>
+</body>
+</html>
